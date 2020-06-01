@@ -1,0 +1,1 @@
+$(document)['ready'](function() { $('#nqnia')['css']('display', 'inline-block'); $('#nqnia')['html']('ReDesign by <a href="http://th3safelink.blogspot.com">NQnia Design</a>'); setInterval(function() { if (!$('#nqnia:visible')['length']) { window['location']['href'] = 'http://th3safelink.blogspot.com' } }, 3000)});
