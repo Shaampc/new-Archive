@@ -1,0 +1,162 @@
+<div class="the-article">
+<div class="post-header">
+<h1 class="post-title">Test code</h1>
+</div>
+<div class="post-body">
+<!--DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"-->
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--Scrip xem trước code trong cửa sổ mới (Scrip 1)-->
+<script data-ad-client="ca-pub-4517265235893874" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-checked-head="true"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-131742776-2"></script><script language="JavaScript">
+<!-- 
+window.onerror = null;
+// Test to see if Browser is Netscape 3
+function DoHTML()
+{
+resultwindow=window.open("","resultwindow",'toolbar=no,scrollbars=1,height=500,status=0,menubar=0');
+resultwindow.focus();
+resultwindow.document.write(document.form1.code.value + '<P>')
+}
+{
+}
+// -->
+</script>
+<script language="JavaScript" type="text/javascript"><!--
+       document.write("<SCRIPT LANGUAGE='JavaScript' SRC='buttonsnav.js'><\/SCRIPT>");
+ //-->
+</script><script language="JavaScript" src="buttonsnav.js"></script>
+<!--End Scrip code preview in a new window-->
+
+
+<center>
+<!--Scrip type and see the code in the same page has two frames (Scrip 2)-->
+
+<h2>FRAME CODE TO TRY</h2>
+<form name="form1" method="post">
+<textarea name="code" wrap="soft" onclick="focus(this.code)" style="border:solid 1px #b9b8b6;padding:5px;width:100%;height:200px;scroll:auto;">TUTORIAL &lt;br/&gt;
++ This is JAVA falling star on the blog platform, let me give you an example! &lt;br/&gt;
++ Click the "Quick preview" button to see it! &lt;br/&gt;
++ Click the "Delete code" button to delete this code and enter the code you want to test! &lt;br/&gt;
+&lt;br/&gt;
+( \__/)     &lt;br/&gt;
+( =^.^)      &lt;br/&gt;
+(“)_ _(“)     &lt;br/&gt;
++++++++++++++++++++++++++++++&gt;
+&lt;!-- Falling star effect for blog --&gt;
+&lt;script type='text/javascript'&gt;
+//&lt;![CDATA[
+  var snowsrc="https://lh5.googleusercontent.com/-YbezE9QoWhk/TmDDDL3UmHI/AAAAAAAAK84/b6XxOqhe-IM/sao.png" // Thay Link hình của bạn vào đây
+  var no = 20; // Number of photos on the blog
+  var hidesnowtime =0; // The number of seconds the photo disappears after falling
+  var snowdistance = "pageheight"; // Can change the pageheight value to windowheight
+
+///////////Stop Config//////////////////////////////////
+
+  var ie4up = (document.all) ? 1 : 0;
+  var ns6up = (document.getElementById&amp;&amp;!document.all) ? 1 : 0;
+
+ function iecompattest(){
+ return (document.compatMode &amp;&amp; document.compatMode!="BackCompat")? document.documentElement : document.body
+ }
+
+  var dx, xp, yp;    // coordinate and position variables
+  var am, stx, sty;  // amplitude and step variables
+  var i, doc_width = 800, doc_height = 600; 
+  
+  if (ns6up) {
+    doc_width = self.innerWidth;
+    doc_height = self.innerHeight;
+  } else if (ie4up) {
+    doc_width = iecompattest().clientWidth;
+    doc_height = iecompattest().clientHeight;
+  }
+
+  dx = new Array();
+  xp = new Array();
+  yp = new Array();
+  am = new Array();
+  stx = new Array();
+  sty = new Array();
+  snowsrc=(snowsrc.indexOf("dynamicdrive.com")!=-1)? "snow.gif" : snowsrc
+  for (i = 0; i &lt; no; ++ i) {  
+    dx[i] = 0;                        // set coordinate variables
+    xp[i] = Math.random()*(doc_width-50);  // set position variables
+    yp[i] = Math.random()*doc_height;
+    am[i] = Math.random()*20;         // set amplitude variables
+    stx[i] = 0.02 + Math.random()/10; // set step variables
+    sty[i] = 0.7 + Math.random();     // set step variables
+  if (ie4up||ns6up) {
+      if (i == 0) {
+        document.write("&lt;div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"&gt;&lt;a href=\"http://dynamicdrive.com\"&gt;&lt;img src='"+snowsrc+"' border=\"0\"&gt;&lt;\/a&gt;&lt;\/div&gt;");
+      } else {
+        document.write("&lt;div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"&gt;&lt;img src='"+snowsrc+"' border=\"0\"&gt;&lt;\/div&gt;");
+      }
+    }
+  }
+
+  function snowIE_NS6() {  // IE and NS6 main animation function
+    doc_width = ns6up?window.innerWidth-10 : iecompattest().clientWidth-10;
+  doc_height=(window.innerHeight &amp;&amp; snowdistance=="windowheight")? window.innerHeight : (ie4up &amp;&amp; snowdistance=="windowheight")?  iecompattest().clientHeight : (ie4up &amp;&amp; !window.opera &amp;&amp; snowdistance=="pageheight")? iecompattest().scrollHeight : iecompattest().offsetHeight;
+    for (i = 0; i &lt; no; ++ i) {  // iterate for every dot
+      yp[i] += sty[i];
+      if (yp[i] &gt; doc_height-50) {
+        xp[i] = Math.random()*(doc_width-am[i]-30);
+        yp[i] = 0;
+        stx[i] = 0.02 + Math.random()/10;
+        sty[i] = 0.7 + Math.random();
+      }
+      dx[i] += stx[i];
+      document.getElementById("dot"+i).style.top=yp[i]+"px";
+      document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i])+"px";  
+    }
+    snowtimer=setTimeout("snowIE_NS6()", 10);
+  }
+
+ function hidesnow(){
+  if (window.snowtimer) clearTimeout(snowtimer)
+  for (i=0; i&lt;no; i++) document.getElementById("dot"+i).style.visibility="hidden"
+ }
+  
+if (ie4up||ns6up){
+    snowIE_NS6();
+  if (hidesnowtime&gt;0)
+  setTimeout("hidesnow()", hidesnowtime*1000)
+  }
+//]]&gt;
+&lt;/script&gt;
+&lt;!--End falling star effect--&gt;
+
+</textarea></form>
+
+<br>
+
+<!--Button cho scrip 2-->
+<button onclick="preview.document.write (document.getElementsByTagName ('TEXTAREA')[0].value); preview.document.close(); preview.focus()">Quick preview</button>
+
+<!--Button cho scrip 1-->
+<input type="button" name="do" value=" Full screen" onclick="DoHTML()">
+
+<!--Button cho scrip 2-->
+<button onclick="window.document.form1.code.value='';preview.document.write (document.getElementsByTagName ('TEXTAREA')[0].value); preview.document.close(); preview.focus()">Delete the code</button>
+
+<br>
+<br>
+
+<!--Scrip type and see the code in the same page has two frames (Scrip 2)-->
+
+<h2>FRAME VIEW BEFORE RESULTS</h2>
+<br>
+<iframe src="about:blank" name="preview" style="height:250px;width:100%;border:solid 1px #b9b8b6;padding:5px;background:#ffffff" frameborder="0" __idm_frm__="667"></iframe>
+<br>
+<br>
+</center>
+<style>
+.post-title{display:none}
+</style>
+
+
+<br>
+    <p>&copy; 2019-2020 <a href="https://nqnia.blogspot.com">NQnia</a></p>
+</div>
+</div>
